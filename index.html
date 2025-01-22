@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #2a2a72;
+        color: #fff;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: center;
+      }
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .left-panel {
+        flex: 1 1 40%;
+        background-color: #1d1d47;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      .left-panel img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      .right-panel {
+        flex: 1 1 60%;
+        padding: 20px;
+      }
+      .right-panel h1 {
+        font-size: 32px;
+        margin: 10px 0;
+      }
+      .right-panel p {
+        line-height: 1.8;
+        color: #555;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #2a2a72;
+        color: #fff;
+      }
+      tr:nth-child(even) {
+        background-color: #f4f4f9;
+      }
+      tr:hover {
+        background-color: #ddd;
+      }
+      footer {
+        background-color: #2a2a72;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 14px;
+      }
+      footer a {
+        color: #f4f4f9;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .right-panel {
+          text-align: center;
+        }
+      }
+      .intro-section,
+      .about-section,
+      .portfolio-section,
+      .testimonial-section {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .intro-section h2,
+      .about-section h2,
+      .portfolio-section h2,
+      .testimonial-section h2 {
+        color: #2a2a72;
+        margin-bottom: 15px;
+      }
+      .intro-section p,
+      .about-section p,
+      .testimonial-section p {
+        line-height: 1.6;
+        margin-top: 10px;
+      }
+      .portfolio-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+      }
+      .portfolio-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+      }
+      .portfolio-item h3 {
+        padding: 10px;
+        font-size: 18px;
+        background-color: #2a2a72;
+        color: #fff;
+        margin: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left-panel">
+        <img src="Images/Img1.png" alt="Profile Picture" />
+        <p><strong>Name:</strong> Suraj Gunjal</p>
+        <p><strong>Location:</strong> Pune, India</p>
+        <p><strong>College:</strong> VIT Pune (Kondhwa Campus)</p>
+      </div>
+      <div class="right-panel">
+        <h1>Suraj Gunjal</h1>
+        <h2 style="color: #2a2a72">Frontend Developer</h2>
+        <h2>ML Enthusiast</h2>
+        <br />
+        <hr />
+        <p>
+          I am an enthusiastic and dedicated Computer Science student
+          specializing in Artificial Intelligence and Machine Learning.
+          Passionate about solving real-world problems through technology, I
+          constantly strive to learn and innovate. My portfolio showcases my
+          skills, projects, and journey in tech.
+        </p>
+        <h2>Certifications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Name of Certification</th>
+              <th>Date of Completion</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Complete Java Bootcamp</td>
+              <td>29th May 2024</td>
+              <td>A+</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Python for Everybody</td>
+              <td>15th March 2023</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Machine Learning Basics</td>
+              <td>10th June 2024</td>
+              <td>A+</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Web Development Bootcamp</td>
+              <td>20th March 2024</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="intro-section">
+        <h2>Introduction</h2>
+        <p>
+          Hi, I'm Suraj Gunjal, a passionate Computer Science Engineer focusing
+          on Artificial Intelligence and Machine Learning. Welcome to my online
+          portfolio, where you can explore my skills, projects, and achievements.
+        </p>
+      </div>
+      <div class="about-section">
+        <h2>About Me</h2>
+        <p>
+          With a strong foundation in problem-solving and programming, I enjoy
+          creating innovative solutions. My expertise spans multiple
+          technologies, including Java, React, and C++, combined with excellent
+          teamwork and collaboration skills.
+        </p>
+      </div>
+      <div class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+          <div class="portfolio-item">
+            <a href="https://retrophil.vercel.app/" target="_blank">
+            <img src="/Images/retrophile.jpg" alt="Project 1" />
+            <h3>Project 1: E-Commerce Website(Retrophie)</h3>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://suraj-gunjal.github.io/Netflix-Clone/" target="_blank">
+            <img src="/Images/netflix.jpg" alt="Project 2" />
+            </a>
+            <h3>Project 2: Netflix Clone</h3>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-section">
+        <h2>Testimonials</h2>
+        <p>
+          "Suraj's attention to detail and problem-solving skills are
+          outstanding. He was an integral part of our team." <b>- Dhananjay Chitale</b>
+        </p>
+        <p>
+          "His ability to turn ideas into reality is remarkable. Highly
+          recommend!" <b>- Aditya Sahu</b>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 Suraj Gunjal. All Rights Reserved.</p>
+        <p>
+          <a href="#top">Back to Top</a> |
+          <a href="https://www.linkedin.com/in/surajgunjal">LinkedIn</a> |
+          <a href=" https://github.com/suraj-gunjal">GitHub</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
